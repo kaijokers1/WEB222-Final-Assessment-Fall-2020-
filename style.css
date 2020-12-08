@@ -1,0 +1,194 @@
+/* Add any CSS you need to this file. */
+
+/* import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap');
+
+:root {
+  --text-primary: black;
+  --text-secondary: black;
+  --text-primary-dark: red;
+  --text-secondary-dark: red;
+  --bg-primary: white;
+  --bg-secondary: red;
+  --bg-navbar: darkred;
+}
+
+* {
+  font-family: Montserrat, Verdana, sans-serif;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--text-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 4fr 2fr 2fr;
+  column-gap: 1em;
+  background-color: var(--bg-secondary);
+}
+
+.title {
+  font-size: 28px;
+}
+
+.page {
+  text-align: center;
+}
+
+.search {
+  background: var(--bg-secondary);
+  transition: box-shadow 0.1s;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 15px;
+}
+
+.search:hover {
+  box-shadow: 0 0 1px black;
+  -moz-box-shadow: 0 0 1px black;
+  -webkit-box-shadow: 0 0 1px black;
+  -o-box-shadow: 0 0 1px black;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: var(--bg-navbar);
+  column-gap: 1em;
+  row-gap: 50px;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
+  background-color: var(--bg-secondary);
+  column-gap: 1em;
+  padding: 1em;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.main .text {
+  width: 50%;
+}
+
+#question,
+#comments,
+#order {
+  display: inline;
+}
+
+.contactform textarea {
+  width: 90%;
+  height: auto;
+}
+
+.subscribe {
+  text-align: center;
+  align-self: center;
+  justify-self: end;
+}
+
+.cart p {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  color: var(--text-primary);
+  background-color: var(--bg-navbar);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-radius: 10px;
+  background-color: var(--bg-primary);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  padding: 2em;
+  margin: 1em;
+}
+
+.wrapper h3 {
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  padding: 2em;
+  margin: 1em;
+}
+
+.game {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.game img {
+  width: auto;
+  max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game p {
+  text-align: center;
+}
+
+.socialmedia {
+  align-self: center;
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.currentselection {
+  background-color: var(--bg-primary);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+     
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="images/Xbox-Logo-2013–now.jpg" style="width:250px" alt="logo"/></a>
+        </div>
+        <div class="title">
+          <a href="index.html"><h1>XBOX GAMING STORE</h1></a>
+        </div>
+      
+        
+        <div class="jumbotron">
+          <div class="logo_name">
+            <span id="title-contact"><strong>Contact Us</strong></span>
+          </div>
+          
+          <div class="text-center">
+            <form action="https://httpbin.org/post" method="get">
+              
+              <div>
+                <label>FISRT NAME</label>
+                <input class="fname" type="text" placeholder="Beyonce" required />
+              </div>
+              <div>
+                <label>LAST NAME</label>
+                <input class="lname" type="text" placeholder="Knowles" required />
+              </div>
+              <div>
+                <label>EMAIL</label>
+                <input class="email" type="email" placeholder="example@site.com" required />
+              </div>
+              <div>
+                <label>Address</label>
+                <input class="address" type="text" placeholder="1713 W Roma St" required />
+              </div>
+              <div>
+                <label>CITY</label>
+  
+                <input class="city" list="cities" name="cities" placeholder="Toronto" required />
+                <datalist id="cities">
+                  <option value="Toronto"> </option>
+                  <option value="Ottawa"> </option>
+                  <option value="Montreal"></option>
+                  <option value="Vancouver"></option>
+                  <option value="Calgary"></option>
+                  <option value="Edmonton"></option>
+                  <option value="Winnipeg"></option>
+                  <option value="Hamilton"></option>
+                  <option value="Kitchener"></option>
+                  <option value="London"></option>
+                </datalist>
+              </div>
+              <div>
+                <label>PHONE NUMBER</label>
+                <input
+                  class="phone-number"
+                  type="tel"
+                  placeholder="+1 (000)-000-0000"
+                  pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+                  required
+                />
+              </div>
+              <div>
+                <label>POSTAL CODE</label>
+                <input
+                type="text"
+                name="postalcode"
+                class="text"
+                pattern="^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\d{1}[A-Za-z]{1}\d{1}[A-Za-z]{1}\d{1}$"
+                placeholder="Your postal code"
+                required
+              />
+              </div>
+              <div>
+                <label>WOULD YOU LIKE TO BE PHONED?</label>
+                <input type="checkbox" />
+              </div>
+              <div class="subject">
+                <label id="message-subject">SUBJECT:</label>
+                <div>
+                  <label>Question</label>
+                  <input type="radio" />
+                  <label>Comment</label>
+                  <input type="radio" />
+                  <label>Order Problem</label>
+                  <input onclick="addTextarea()" type="radio" />
+                  <div id="dynamic"></div>
+                </div>
+              </div>
+              <div>
+                <label>MESSAGE</label>
+                <textarea placeholder="message" required></textarea>
+              </div>
+              <input type="hidden" class="Adriana" />
+              <input type="submit" value="Send" />
+  
+              <div class="error-msg"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="form">
+            <label>Enter Email to receive update when we get new exclusive items</label>
+            <form action="https://formspree.io/mvoboyeo" method="POST">
+              <label>
+                Your email:
+                <input type="text" name="_replyto" />
+              </label>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
+  
